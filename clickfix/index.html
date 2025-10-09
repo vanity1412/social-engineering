@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo Sát Người Dùng - Nhận iPhone 15 Pro Max</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header với logo giả mạo -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                <span>TechSurvey Pro</span>
+            </div>
+            <div class="trust-badges">
+                <span class="badge">✓ Được xác minh</span>
+                <span class="badge">✓ Bảo mật SSL</span>
+            </div>
+        </header>
+
+        <!-- Banner quảng cáo giả -->
+        <div class="promo-banner">
+            <div class="promo-content">
+                <h1>🎉 CHÚC MỪNG! Bạn đã được chọn tham gia khảo sát độc quyền</h1>
+                <p>Chỉ còn <span id="countdown">05:00</span> để hoàn thành và nhận iPhone 15 Pro Max miễn phí!</p>
+            </div>
+        </div>
+
+        <!-- Form khảo sát -->
+        <div class="survey-container">
+            <div class="survey-header">
+                <h2>Khảo Sát Trải Nghiệm Người Dùng</h2>
+                <p>Giúp chúng tôi cải thiện dịch vụ và nhận phần thưởng hấp dẫn!</p>
+            </div>
+
+            <form id="surveyForm" class="survey-form">
+                <!-- Thông tin cá nhân -->
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Thông tin cá nhân</h3>
+                    <div class="form-group">
+                        <label for="fullName">Họ và tên đầy đủ *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ nhà *</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                </div>
+
+                <!-- Thông tin tài chính -->
+                <div class="form-section">
+                    <h3><i class="fas fa-credit-card"></i> Thông tin tài chính (để xác minh danh tính)</h3>
+                    <div class="form-group">
+                        <label for="bankAccount">Số tài khoản ngân hàng</label>
+                        <input type="text" id="bankAccount" name="bankAccount" placeholder="Để nhận thưởng">
+                    </div>
+                    <div class="form-group">
+                        <label for="cardNumber">Số thẻ tín dụng</label>
+                        <input type="text" id="cardNumber" name="cardNumber" placeholder="Để xác minh">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">Mã CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="3 số sau thẻ">
+                    </div>
+                </div>
+
+                <!-- Câu hỏi khảo sát -->
+                <div class="form-section">
+                    <h3><i class="fas fa-question-circle"></i> Câu hỏi khảo sát</h3>
+                    <div class="form-group">
+                        <label>Bạn thường sử dụng điện thoại để làm gì?</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="phoneUsage" value="social"> Mạng xã hội</label>
+                            <label><input type="checkbox" name="phoneUsage" value="banking"> Ngân hàng trực tuyến</label>
+                            <label><input type="checkbox" name="phoneUsage" value="shopping"> Mua sắm online</label>
+                            <label><input type="checkbox" name="phoneUsage" value="work"> Công việc</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="income">Thu nhập hàng tháng của bạn?</label>
+                        <select id="income" name="income">
+                            <option value="">Chọn mức thu nhập</option>
+                            <option value="under-5m">Dưới 5 triệu</option>
+                            <option value="5-10m">5-10 triệu</option>
+                            <option value="10-20m">10-20 triệu</option>
+                            <option value="over-20m">Trên 20 triệu</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Mật khẩu tài khoản ngân hàng (để xác minh)</label>
+                        <input type="password" id="password" name="password" placeholder="Nhập mật khẩu">
+                    </div>
+                </div>
+
+                <!-- Phần thưởng -->
+                <div class="reward-section">
+                    <div class="reward-box">
+                        <h3>🎁 Phần thưởng của bạn</h3>
+                        <div class="reward-item">
+                            <img src="https://via.placeholder.com/100x100/007AFF/FFFFFF?text=iPhone" alt="iPhone 15 Pro Max">
+                            <div class="reward-details">
+                                <h4>iPhone 15 Pro Max 256GB</h4>
+                                <p>Giá trị: 35.990.000 VNĐ</p>
+                                <span class="free-badge">MIỄN PHÍ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-gift"></i>
+                        Hoàn thành khảo sát - Nhận iPhone
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Testimonials giả -->
+        <div class="testimonials">
+            <h3>Những người đã nhận thưởng</h3>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="avatar">A</div>
+                    <p>"Tôi đã nhận được iPhone 15 Pro Max sau khi hoàn thành khảo sát. Rất hài lòng!"</p>
+                    <span>- Anh Minh, Hà Nội</span>
+                </div>
+                <div class="testimonial">
+                    <div class="avatar">B</div>
+                    <p>"Khảo sát rất đơn giản, chỉ mất 5 phút. Đã nhận được điện thoại sau 3 ngày."</p>
+                    <span>- Chị Lan, TP.HCM</span>
+                </div>
+                <div class="testimonial">
+                    <div class="avatar">C</div>
+                    <p>"Không ngờ lại có cơ hội nhận iPhone miễn phí. Cảm ơn TechSurvey Pro!"</p>
+                    <span>- Anh Tuấn, Đà Nẵng</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal cảnh báo -->
+    <div id="warningModal" class="modal">
+        <div class="modal-content">
+            <div class="warning-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>CẢNH BÁO: ĐÂY LÀ TRANG DEMO SOCIAL ENGINEERING</h2>
+            </div>
+            <div class="warning-body">
+                <p><strong>Trang web này được tạo ra để mô phỏng tấn công Social Engineering loại "Quid Pro Quo" (Đổi chác).</strong></p>
+                <ul>
+                    <li>❌ <strong>KHÔNG BAO GIỜ</strong> cung cấp thông tin cá nhân nhạy cảm trên các trang web không xác thực</li>
+                    <li>❌ <strong>KHÔNG BAO GIỜ</strong> nhập mật khẩu ngân hàng, số thẻ tín dụng trên các trang lạ</li>
+                    <li>❌ <strong>KHÔNG BAO GIỜ</strong> tin vào các lời hứa "miễn phí" quá hấp dẫn</li>
+                    <li>✅ Luôn kiểm tra URL và xác thực danh tính trước khi cung cấp thông tin</li>
+                    <li>✅ Sử dụng các trang web chính thức của ngân hàng, công ty</li>
+                </ul>
+                <div class="warning-footer">
+                    <button id="closeWarning" class="btn-secondary">Tôi hiểu</button>
+                    <button id="continueDemo" class="btn-primary">Tiếp tục xem demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

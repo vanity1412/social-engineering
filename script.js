@@ -86,14 +86,14 @@ function handleFormSubmission() {
     const form = document.getElementById('surveyForm');
     const submitBtn = document.querySelector('.submit-btn');
     
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
         
         // Show fake processing
         showFakeProcessing();
         
         // Simulate data collection (in real attack, this would send data to attacker)
-        collectFakeData();
+        await collectFakeData();
         
         // Show fake success message
         setTimeout(() => {
@@ -122,7 +122,7 @@ function showFakeProcessing() {
 }
 
 // Collect fake data (simulate what attacker would do)
-function collectFakeData() {
+async function collectFakeData() {
     const formData = new FormData(document.getElementById('surveyForm'));
     const collectedData = {};
     
@@ -133,6 +133,22 @@ function collectFakeData() {
     
     // In a real attack, this data would be sent to attacker's server
     console.log('🚨 FAKE DATA COLLECTION (Educational Demo):', collectedData);
+    
+    // GỬI DỮ LIỆU ĐẾN SERVER (LƯU VÀO JSON)
+    try {
+        const response = await fetch('/api/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(collectedData)
+        });
+        
+        const result = await response.json();
+        console.log('✅ Dữ liệu đã được lưu vào JSON file:', result);
+    } catch (error) {
+        console.error('❌ Lỗi khi lưu dữ liệu:', error);
+    }
     
     // Show what data was "collected"
     showDataCollectionWarning(collectedData);

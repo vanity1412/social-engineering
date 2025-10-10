@@ -1,0 +1,136 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                    📁 DANH SÁCH FILES - SOCIAL ENGINEERING DEMO              ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📂 CẤU TRÚC DỰ ÁN ĐƠN GIẢN
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🌐 FRONTEND - Giao diện web                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📄 index.html           → Trang chính - Form lừa đảo demo
+📄 styles.css           → CSS - Giao diện đẹp, chuyên nghiệp
+📄 script.js            → JavaScript - Logic xử lý form, countdown
+📄 admin.html           → Admin panel - Xem dữ liệu đã thu thập
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 💻 BACKEND - Server                                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🐍 web.py               → Flask server chính
+                          - Serve HTML/CSS/JS
+                          - Lưu dữ liệu vào JSON
+                          - API endpoints
+                          - HTTP & HTTPS support
+
+📋 requirements.txt     → Python packages cần thiết
+                          - Flask
+                          - Werkzeug
+                          - requests
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 💾 DATA - Dữ liệu                                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📊 social_engineering_data.json  → Dữ liệu lưu tự động
+                                   - Tạo khi submit form lần đầu
+                                   - Format JSON dễ đọc
+                                   - Có metadata và submissions
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🚀 SCRIPTS - Chạy nhanh                                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🪟 start_server.bat     → Windows - Double click để chạy
+🐧 start_server.sh      → Linux/Mac - ./start_server.sh
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 📚 DOCUMENTATION - Tài liệu                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📖 README.md            → Tài liệu chính - Đọc đầu tiên
+⚡ QUICK_START.md       → Bắt đầu nhanh trong 3 bước
+📘 HUONG_DAN_CHAY.md   → Hướng dẫn chi tiết
+📝 DEMO_SUMMARY.md     → Tóm tắt dự án
+📄 START_HERE.txt      → File này - Bắt đầu tại đây
+🔒 LICENSE             → MIT License
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ⚙️ CONFIG - Cấu hình                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🚫 .gitignore           → Ignore files cho Git
+                          - *.db (database)
+                          - social_engineering_data.json
+                          - cert.pem, key.pem (SSL)
+                          - __pycache__, etc.
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ❌ FILES KHÔNG CẦN (Đã xóa)                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+❌ web_json.py                → Đã đổi tên thành web.py
+❌ convert_db_to_json.py      → Không cần convert, lưu thẳng JSON
+❌ test_database.py           → Test cho SQLite, đã xóa
+❌ social_engineering_demo.db → SQLite database cũ, đã xóa
+❌ DATABASE_INFO.md           → Tài liệu SQLite, đã xóa
+❌ JSON_GUIDE.md              → Quá chi tiết, đã xóa
+❌ QUICK_JSON.md              → Không cần, đã xóa
+❌ NEW_FEATURES.md            → Tài liệu cũ, đã xóa
+❌ TESTING.md                 → Test phức tạp, đã xóa
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🎯 WORKFLOW ĐƠN GIẢN                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1️⃣ Cài đặt:
+   pip install Flask
+
+2️⃣ Chạy:
+   python web.py
+   → Chọn 1 (HTTP)
+
+3️⃣ Test:
+   - Mở: http://localhost:5000
+   - Điền form
+   - Submit
+
+4️⃣ Xem dữ liệu:
+   - Admin: http://localhost:5000/admin
+   - Hoặc mở file: social_engineering_data.json
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 📊 THỐNG KÊ DỰ ÁN                                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📝 Tổng files:          14 files
+🌐 Frontend:            4 files (HTML, CSS, JS)
+💻 Backend:             2 files (Python)
+📚 Documentation:       5 files (MD, TXT)
+⚙️  Config:             2 files
+🚀 Scripts:             2 files (BAT, SH)
+
+Lines of code:          ~800 dòng
+Framework:              Flask
+Storage:                JSON file
+Demo type:              Quid Pro Quo attack
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🎓 MỤC ĐÍCH                                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ Giáo dục về Social Engineering
+✅ Mô phỏng tấn công Quid Pro Quo
+✅ Học cách nhận biết và phòng chống
+✅ Hiểu cách kẻ tấn công thu thập dữ liệu
+
+⚠️  CHỈ DÙNG CHO MỤC ĐÍCH HỌC TẬP!
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                     🚀 BẮT ĐẦU NGAY: python web.py                           ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+

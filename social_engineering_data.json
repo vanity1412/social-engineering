@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "total_submissions": 1,
+    "exported_at": "2025-10-11 01:59:42",
+    "source": "SQLite Database",
+    "database_file": "social_engineering_demo.db",
+    "last_updated": "2025-10-11 02:11:34"
+  },
+  "submissions": [
+    {
+      "id": 1,
+      "timestamp": "2025-10-11 02:11:34",
+      "ip_address": "127.0.0.1",
+      "full_name": "vũ văn thông",
+      "phone": "0968046024",
+      "email": "vuvanthong1708@gmail.com",
+      "address": "Thôn 2 Xã Nâm N Jang Huyện Đak Song Tỉnh Đak Nông",
+      "bank_account": "123",
+      "card_number": "123",
+      "cvv": "123",
+      "password": "123",
+      "income": "under-5m",
+      "phone_usage": "social"
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║              ✅ SOCIAL ENGINEERING DEMO - BẮT ĐẦU TẠI ĐÂY                   ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🎉 Dự án đơn giản - Dữ liệu lưu vào JSON file!
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🚀 CÁCH CHẠY (CỰC ĐƠN GIẢN - 2 BƯỚC)                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1️⃣ Chạy server:
+   python web.py
+   (Chọn 1 cho HTTP hoặc 2 cho HTTPS)
+
+2️⃣ Mở trình duyệt:
+   http://localhost:5000
+
+Xong! Điền form → Dữ liệu lưu vào JSON file tự động!
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 📚 TÀI LIỆU HƯỚNG DẪN                                                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+⚡ QUICK_START.md       - Bắt đầu nhanh trong 3 bước
+📘 HUONG_DAN_CHAY.md   - Hướng dẫn chi tiết đầy đủ
+📝 DEMO_SUMMARY.md     - Tóm tắt dự án và tính năng
+🧪 TESTING.md          - Hướng dẫn test và debug
+📖 README.md           - Tài liệu chính của dự án
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 📁 FILES QUAN TRỌNG                                                         ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🌐 Frontend:
+  ✅ index.html          - Trang web chính
+  ✅ styles.css          - Giao diện
+  ✅ script.js           - Logic
+
+💻 Backend:
+  ✅ web.py              - Flask server (HTTP/HTTPS)
+  ✅ admin.html          - Admin panel
+  ✅ requirements.txt    - Cài đặt: pip install -r requirements.txt
+
+💾 Data:
+  ✅ social_engineering_data.json  - Dữ liệu được lưu ở đây (tự động tạo)
+
+📚 Docs:
+  ✅ README.md           - Hướng dẫn chính
+  ✅ QUICK_START.md      - Bắt đầu nhanh
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ✨ TÍNH NĂNG                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+🌐 Trang Web:
+   - Form điền thông tin → Lừa đảo Quid Pro Quo
+   - Countdown timer → Tạo khẩn cấp
+   - Warning modal → Giáo dục người dùng
+
+💾 Lưu Dữ Liệu:
+   - Tự động lưu vào: social_engineering_data.json
+   - Dễ đọc, dễ edit
+   - Không cần database
+
+🖥️ Admin Panel:
+   - URL: http://localhost:5000/admin
+   - Xem dữ liệu thu thập được
+   - Thống kê, tìm kiếm, export CSV
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🎯 NEXT STEPS                                                               ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+1️⃣ Test local:
+   python web.py
+   → Chọn option 1 hoặc 2
+   → Mở browser: http://localhost:5000
+
+2️⃣ Test tự động:
+   python test_server.py
+
+3️⃣ Upload lên GitHub:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/username/repo.git
+   git push -u origin main
+
+4️⃣ Deploy GitHub Pages:
+   Settings → Pages → Deploy from main branch
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ ⚠️ LƯU Ý QUAN TRỌNG                                                        ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+✅ Dự án này CHỈ dùng cho MỤC ĐÍCH GIÁO DỤC
+✅ KHÔNG sử dụng cho mục đích bất hợp pháp
+✅ Self-signed certificate chỉ cho development
+✅ Dữ liệu form KHÔNG được lưu trữ
+✅ Sử dụng có trách nhiệm và đạo đức
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🆘 HỖ TRỢ & TROUBLESHOOTING                                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+❌ Lỗi "Python not found"
+   → Cài Python: https://www.python.org/downloads/
+
+❌ Lỗi "Flask not found"
+   → Chạy: pip install Flask
+
+❌ Lỗi "Port already in use"
+   → Đổi port trong web.py (dòng PORT = 5000)
+
+❌ Lỗi "OpenSSL not found"
+   → Chọn option 1 (HTTP) hoặc cài OpenSSL
+
+📖 Chi tiết: Xem HUONG_DAN_CHAY.md
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 📊 THỐNG KÊ DỰ ÁN                                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+📝 Files created: 14
+📄 Documentation: 5 files
+💻 Code files: 3 (HTML, CSS, JS)
+🐍 Python files: 2 (web.py, test_server.py)
+📜 Scripts: 2 (BAT, SH)
+⚙️  Config: 3 (requirements.txt, .gitignore, LICENSE)
+
+Total lines of code: ~1000+ lines
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ 🎉 KẾT LUẬN                                                                 ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Bạn đã có một dự án HOÀN CHỈNH với:
+
+✅ Frontend demo đẹp mắt, chuyên nghiệp
+✅ Backend server với HTTP và HTTPS
+✅ Auto-generate SSL certificate
+✅ Tài liệu hướng dẫn đầy đủ
+✅ Scripts tiện lợi để chạy
+✅ Test automation
+✅ Sẵn sàng deploy lên GitHub Pages
+
+🚀 BẮT ĐẦU NGAY:
+   1. Double-click: start_server.bat
+   2. Chọn option 1 hoặc 2
+   3. Mở browser: http://localhost:5000
+
+📚 ĐỌC THÊM:
+   - Mở QUICK_START.md để bắt đầu
+   - Xem DEMO_SUMMARY.md để hiểu tổng quan
+   - Đọc HUONG_DAN_CHAY.md cho chi tiết
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                                                                              ║
+║                   CHÚC BẠN HỌC TẬP HIỆU QUẢ! 🎓🔐                           ║
+║                                                                              ║
+║                   Use Responsibly and Ethically! 🛡️                        ║
+║                                                                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+

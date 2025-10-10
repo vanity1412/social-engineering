@@ -52,19 +52,69 @@
 
 ## 🚀 Cách chạy demo
 
+### Cách 1: Mở file HTML trực tiếp
 1. Mở file `index.html` trong trình duyệt
 2. Đọc cảnh báo và nhấn "Tiếp tục xem demo"
 3. Trải nghiệm cách thức hoạt động của tấn công
 4. Học cách nhận biết và phòng chống
 
+### Cách 2: Chạy với Web Server (Khuyến nghị)
+
+#### Yêu cầu:
+- Python 3.7 trở lên
+- Flask (cài đặt: `pip install Flask`)
+
+#### Chạy server:
+
+**Windows:**
+```bash
+python web.py
+# Chọn 1 (HTTP) hoặc 2 (HTTPS)
+```
+
+Hoặc double-click: `start_server.bat`
+
+**Linux/Mac:**
+```bash
+python3 web.py
+# Chọn 1 (HTTP) hoặc 2 (HTTPS)
+```
+
+#### Truy cập:
+- **Trang chính**: http://localhost:5000
+- **Admin Panel**: http://localhost:5000/admin
+- **Dữ liệu JSON**: `social_engineering_data.json`
+
+#### Tính năng:
+1. **Form Submit** → Dữ liệu lưu vào JSON tự động
+2. **Admin Panel** → Xem dữ liệu thu thập, thống kê
+3. **Export CSV** → Download dữ liệu
+4. **Tìm kiếm** → Filter theo tên, email, SĐT
+
 ## 📁 Cấu trúc file
 
 ```
-├── index.html          # Trang web chính
-├── styles.css          # CSS styling
-├── script.js           # JavaScript logic
-└── README.md           # Tài liệu hướng dẫn
+├── index.html              # Trang web chính
+├── styles.css              # CSS styling
+├── script.js               # JavaScript logic
+├── web.py                  # Flask web server (HTTP/HTTPS)
+├── requirements.txt        # Python dependencies
+├── start_server.bat        # Script khởi động (Windows)
+├── start_server.sh         # Script khởi động (Linux/Mac)
+├── HUONG_DAN_CHAY.md      # Hướng dẫn chạy web server
+├── QUICK_START.md         # Bắt đầu nhanh
+├── DEMO_SUMMARY.md        # Tóm tắt dự án
+├── .gitignore             # Git ignore file
+├── LICENSE                # License
+└── README.md              # Tài liệu hướng dẫn
 ```
+
+## 📚 Tài liệu hướng dẫn
+
+- 📖 [README.md](README.md) - Tài liệu chính (file này)
+- ⚡ [QUICK_START.md](QUICK_START.md) - Bắt đầu nhanh trong 3 bước
+- 📘 [HUONG_DAN_CHAY.md](HUONG_DAN_CHAY.md) - Hướng dẫn chi tiết
+- 📝 [DEMO_SUMMARY.md](DEMO_SUMMARY.md) - Tóm tắt dự án
 
 ## 🎓 Mục đích giáo dục
 
